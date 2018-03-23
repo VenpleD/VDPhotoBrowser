@@ -13,6 +13,9 @@
 		7F35310C20590F6600C3FDB2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7F35310B20590F6600C3FDB2 /* Assets.xcassets */; };
 		7F35310F20590F6600C3FDB2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7F35310D20590F6600C3FDB2 /* LaunchScreen.storyboard */; };
 		7F35311220590F6600C3FDB2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F35311120590F6600C3FDB2 /* main.m */; };
+		7F942A13205F541900D5687B /* NetworkImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F942A12205F541900D5687B /* NetworkImageViewController.m */; };
+		7F942A16205F542300D5687B /* LocalImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F942A15205F542300D5687B /* LocalImageViewController.m */; };
+		7F942A19205F57AE00D5687B /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F942A18205F57AE00D5687B /* BaseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +29,12 @@
 		7F35310E20590F6600C3FDB2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7F35311020590F6600C3FDB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7F35311120590F6600C3FDB2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		7F942A11205F541900D5687B /* NetworkImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NetworkImageViewController.h; sourceTree = "<group>"; };
+		7F942A12205F541900D5687B /* NetworkImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NetworkImageViewController.m; sourceTree = "<group>"; };
+		7F942A14205F542200D5687B /* LocalImageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocalImageViewController.h; sourceTree = "<group>"; };
+		7F942A15205F542300D5687B /* LocalImageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocalImageViewController.m; sourceTree = "<group>"; };
+		7F942A17205F57AE00D5687B /* BaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		7F942A18205F57AE00D5687B /* BaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +71,12 @@
 				7F35310320590F6600C3FDB2 /* AppDelegate.m */,
 				7F35310520590F6600C3FDB2 /* ViewController.h */,
 				7F35310620590F6600C3FDB2 /* ViewController.m */,
+				7F942A17205F57AE00D5687B /* BaseViewController.h */,
+				7F942A18205F57AE00D5687B /* BaseViewController.m */,
+				7F942A11205F541900D5687B /* NetworkImageViewController.h */,
+				7F942A12205F541900D5687B /* NetworkImageViewController.m */,
+				7F942A14205F542200D5687B /* LocalImageViewController.h */,
+				7F942A15205F542300D5687B /* LocalImageViewController.m */,
 				7F35310820590F6600C3FDB2 /* Main.storyboard */,
 				7F35310B20590F6600C3FDB2 /* Assets.xcassets */,
 				7F35310D20590F6600C3FDB2 /* LaunchScreen.storyboard */,
@@ -143,8 +158,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7F35310720590F6600C3FDB2 /* ViewController.m in Sources */,
+				7F942A19205F57AE00D5687B /* BaseViewController.m in Sources */,
 				7F35311220590F6600C3FDB2 /* main.m in Sources */,
 				7F35310420590F6600C3FDB2 /* AppDelegate.m in Sources */,
+				7F942A13205F541900D5687B /* NetworkImageViewController.m in Sources */,
+				7F942A16205F542300D5687B /* LocalImageViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +299,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3V4JBL24FX;
 				INFOPLIST_FILE = VDPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanglaoxian.photo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -297,6 +316,7 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = VDPhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yanglaoxian.photo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
